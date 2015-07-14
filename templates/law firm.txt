@@ -1,0 +1,20 @@
+# https://en.wikipedia.org/wiki/Template:Infobox_law_firm
+{{Infobox law firm
+| name                        =
+| logo                        =
+| headquarters                =   <!-- city or, e.g., "Decentralized" -->
+| num_offices                 =
+| num_attorneys               =
+| num_lawyers                 =   <!-- alternative to num_attorneys where "Lawyers" is more appropriate label -->
+| num_employees               =   <!-- Total employees, including attorneys and staff -->
+| practice_areas              =   <!-- MAJOR practice areas only; if they do everything "General Practice" -->
+| key_people                  =   <!-- chairmen and CEOs, not every famous lawyer in the firm -->
+| revenue                     =   <!-- amount (year) -->
+| profit_per_equity_partner   =   <!-- amount (year) -->
+| date_founded                =
+| founder                     =
+| company_type                =   <!-- e.g., [[Limited liability partnership]] or [[Professional corporation]] -->
+| slogan                      =   <!-- not all firms have a slogan, so use as necessary  -->
+| homepage                    =
+| dissolved                   =   <!-- Date/Reason the company dissolved, e.g., merger or bankruptcy -->
+}}
