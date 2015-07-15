@@ -17,60 +17,48 @@
 	}
 
 	$template = file_get_contents($template_filepath);
-	$indent = '';
 
 	function evaluate($string, $parameters)
 	{
-		global $indent;
-		$indent .= '    ';
-
+		// find all \token{string} matches
 		preg_match_all('/(?<token>
         \\\\ # the slash in the beginning
         [a-zA-Z_]+ #a word
         \{[^{}]*((?P>token)[^{}]*)?\} # {something}
 )/x', $string, $matches, PREG_OFFSET_CAPTURE);
 
-		echo $indent.'STRING = '.$string."\n\n";
-
 		$last_offset = 0;
-		$new_string = (sizeof($matches[0]) > 0 ? '' : $string);
+		$new_string = '';
+		// for each \token{string} match, evaluate and concatenate all text before the match and also the match itself
 		foreach ($matches[0] as $index=>$match)
 		{
+			// grab a couple initial state variables
 			$substring = $match[0];
-			echo $indent.'SUBSTRING 1 = '.$substring."\n\n";
 			$offset = $match[1];
 			$length = strlen($substring);
 
-			// process substring
-			$first_bracket_offset = strpos($substring, "{");
-			$last_bracket_offset = strrpos($substring, "}");
-
+			// process the actual match
+			$first_bracket_offset = strpos($substring, "{");  // start of string in \token{string}
+			$last_bracket_offset = strrpos($substring, "}");  // end of string in \token{string}
 			$requirement = substr($substring, 1, $first_bracket_offset-1);
-			echo $requirement."\n\n";
-			echo $indent.'SUBSTRING 2 = '.substr($substring,$first_bracket_offset+1,$last_bracket_offset-$first_bracket_offset-1)."\n\n";
-			
 			if (isset($parameters[$requirement]))
 			{
 				$substring = evaluate(substr($substring,$first_bracket_offset+1,$last_bracket_offset-$first_bracket_offset-1), $parameters);
 			}
 			else $substring = '';
-			echo $indent.'SUBSTRING 3 = '.$substring."\n\n";
 
+			// all text before the \token{string} match
 			$new_string .= substr($string, $last_offset, $offset-$last_offset);
-			echo $indent.'NEWSTRING 1 = '.$new_string."\n\n";
 
+			// the evaluated \token{string} match
 			$new_string .= $substring;
-			echo $indent.'NEWSTRING 2 = '.$new_string."\n\n";
 
-			// set the last offset – where we should pick up after the last match
+			// set the last offset – where we should pick up after the last \token{string} match
 			$last_offset = $offset+$length;
-			echo $indent.'LAST OFFSET = '.$last_offset."\n\n";
-
-			// if there is a next match, add what's next after
-			//if (isset($matches[0][$index+1])) $new_string .= substr($string, $last_offset, $matches[0][$index+1][1]-$last_offset);
-			echo $indent.'NEWSTRING 3 = '.$new_string."\n\n";
 		}
-		$indent = substr($indent, 0, strlen($indent)-4);
+
+		// add everything in the $string after the last match
+		$new_string .= substr($string, $last_offset, strlen($string)-$last_offset);
 		return str_replace(array_map(function($x) { return '*'.$x.'*'; }, array_keys($parameters)), array_values($parameters), $new_string);
 	}
 
