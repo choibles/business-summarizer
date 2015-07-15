@@ -1,0 +1,217 @@
+# https://en.wikipedia.org/wiki/Template:Infobox_school
+{{Infobox school
+| name                   = 
+| native_name            = 
+| latin_name             = 
+| logo                   = 
+| logo_size              = 
+| logo_alt               = 
+| seal_image             = 
+| seal_size              = 
+| seal_alt               = 
+| image                  = 
+| image_size             = 
+| alt                    = 
+| caption                = 
+| pushpin_map            = 
+| pushpin_mapsize        = 
+| pushpin_image          = 
+| pushpin_label_position = 
+| pushpin_label          = 
+| pushpin_map_alt        = 
+| pushpin_map_caption    = 
+| address                = 
+| location               = 
+| region                 = 
+| city                   = <!-- or | town = -->
+| state                  = 
+| province               = 
+| county                 = 
+| postcode               = <!-- or | postalcode = -->
+| zipcode                = 
+| country                = 
+| country1               = 
+| latd                   = <!-- or | latitude = -->
+| latm                   = 
+| lats                   = 
+| latNS                  = 
+| longd                  = <!-- or | longitude = -->
+| longm                  = 
+| longs                  = 
+| longEW                 = 
+| iso_region             = 
+| coordinates_display    = 
+| dms                    = 
+| coordinates            = 
+| schooltype             =
+| fundingtype            = 
+| type                   = 
+| motto                  = <!-- or | mottoes = -->
+| motto_translation      = 
+| religious_affiliation  = 
+| denomination           = 
+| patron                 = 
+| established            = <!-- {{Start date|YYYY|MM|DD|df=y}} -->
+| founded                = 
+| opened                 = 
+| founder                = <!-- or | founders = -->
+| status                 = 
+| closed                 = 
+| locale                 = 
+| sister_school          = 
+| schoolboard            = 
+| district               = 
+| us_nces_district_id    = 
+| LEA                    = 
+| educational_authority  = <!-- or | authority = -->
+| category               = <!-- use | category_label = to override the default label -->
+| oversight              = <!-- use | oversight_label = to override the default label -->
+| authorizer             = 
+| superintendent         = 
+| trustee                = 
+| specialist             = <!-- or | specialists = -->
+| session                = 
+| number                 = 
+| school_code            = 
+| MOE                    = 
+| ofsted                 = 
+| ceeb                   = 
+| us_nces_school_id      = 
+| president              = 
+| chair                  = <!-- use | chair_label = to override the default label -->
+| chairman               = <!-- use | chairman_label = to override the default label -->
+| chairperson            = <!-- use | chairperson_label = to override the default label -->
+| dean                   = 
+| administrator          = 
+| asst_admin             = 
+| rector                 = 
+| director               = 
+| principal              = <!-- use | principal_label = to override the default label -->
+| viceprincipal          = <!-- use | viceprincipal_label = to override the default label -->
+| asst_principal         = 
+| assistant_principals   = <!-- use | assistant_principals_label = to override the default label -->
+| campus_director        = 
+| headmistress           = 
+| headmaster             = 
+| head_of_school         = 
+| head_teacher           = 
+| executive_headteacher  = 
+| acting_headteacher     = 
+| head                   = <!-- use | head_name = to override the default label -->
+| officer_in_charge      = 
+| chaplain               = 
+| custodian              = 
+| staff                  = 
+| faculty                = 
+| teaching_staff         = 
+| employees              = 
+| key_people             =  
+| grades                 = <!-- use | grades_label = to override the default label -->
+| years                  = 
+| years_taught           = <!-- use | nursery_years_taught =, | primary_years_taught =, | secondary_years_taught = for additional information -->
+| gender                 = <!-- use | gender_label = to override the default label -->
+| age_range              = <!-- or | lower_age = and | upper_age = -->
+| lower_age              = <!-- or | age_range = -->
+| upper_age              = <!-- or | age_range = -->
+| enrolment              = <!-- or | enrollment = -->
+| enrolment_as_of        = <!-- or | enrollment_as_of = -->
+| students               = 
+| sixth_form_students    = 
+| pupils                 = 
+| grade_preK             = 
+| gradeK                 = 
+| grade1                 = 
+| grade2                 = 
+| grade3                 = 
+| grade4                 = 
+| grade5                 = 
+| grade6                 = 
+| grade7                 = 
+| grade8                 = 
+| grade9                 = 
+| grade10                = 
+| grade11                = 
+| grade12                = 
+| grade13                = 
+| other                  = <!-- use | other_grade_label = to override the default label -->
+| other_grade_label_1      = 
+| other_grade_enrollment_1 = 
+| other_grade_label_2      = 
+| other_grade_enrollment_2 = 
+| international_students = 
+| classes                = 
+| avg_class_size         = 
+| ratio                  = 
+| system                 = 
+| classes_offered        = 
+| medium_of_language     = 
+| language               = 
+| schedule_type          = 
+| schedule               = 
+| hours_in_day           = 
+| classrooms             = 
+| campuses               = 
+| campus                 = 
+| campus_size            = 
+| area                   = 
+| campus_type            = 
+| campus_bound           = 
+| houses                 = 
+| student_union          = <!-- use | student_union_label = to override the default label -->
+| colours                = <!-- or | colors = -->
+| school_colours         = <!-- or | school_colors = -->
+| slogan                 = 
+| song                   = 
+| fight_song             = 
+| athletics              = 
+| athletics_conference   = 
+| sports                 = 
+| mascot                 = 
+| mascot_image           = 
+| nickname               = 
+| teams                  = <!-- use | teams_label = to override the default label -->
+| team_name              = 
+| rivals                 = <!-- or | rival = -->
+| vision                 = 
+| accreditation          = <!-- or | accreditations = -->
+| ranking                = 
+| USNWR_ranking          =
+| national_ranking       = 
+| test_name              = 
+| test_average           = 
+| SAT                    = 
+| SAT_year               = 
+| ACT                    = 
+| ACT_year               = 
+| bar_pass_rate          = 
+| school_roll            = 
+| decile                 = 
+| publication            = 
+| newspaper              = 
+| yearbook               = 
+| products               = 
+| endowment              = 
+| budget                 = 
+| fees                   = 
+| annual_tuition         = 
+| tuition                = 
+| revenue                = 
+| communities            = 
+| feeder_schools         = 
+| feeder_to              = 
+| graduates              = 
+| graduates_year         = 
+| affiliation            = <!-- or | affiliations = -->
+| alumni                 = 
+| nobel_laureates        = 
+| information            = 
+| homepage               = 
+| url                    = <!-- {{URL|school.url}} or {{URL|1=school.url}} if the url contains an equals sign -->
+| website                = 
+| footnotes              = 
+| picture                = 
+| picture_caption        = 
+| picture2               = 
+| picture_caption2       = 
+| lastupdate             =
+}}

@@ -1,0 +1,65 @@
+# https://en.wikipedia.org/wiki/Template:Infobox_venue
+{{Infobox venue
+| name                   = 
+| nickname               = 
+| native_name            = 
+| native_name_lang       = 
+| fullname               = 
+| former names           = 
+| logo_image             = 
+| logo_caption           = 
+| image                  = 
+| image_size             = 
+| image_alt              = 
+| caption                = 
+| pushpin_map            = 
+| pushpin_mapsize        = 
+| pushpin_map_caption    = 
+| pushpin_label_position = 
+| latd                   = 
+| latm                   = 
+| lats                   = 
+| latNS                  = 
+| longd                  = 
+| longm                  = 
+| longs                  = 
+| longEW                 = 
+| coordinates_display    = 
+| iso_region             = 
+| address                = 
+| location               = 
+| coordinates            = <!-- {{Coord|LAT|LON|type:landmark|display=inline,title}} -->
+| type                   = 
+| genre                  = 
+| broke_ground           = 
+| built                  = 
+| opened                 = <!-- {{Start date|YYYY|MM|DD|df=y}} -->
+| renovated              = 
+| expanded               = 
+| closed                 = 
+| demolished             = 
+| owner                  = 
+| operator               = 
+| surface                = 
+| scoreboard             = 
+| production             = 
+| cost                   = 
+| architect              = 
+| project_manager        = 
+| structural engineer    = 
+| services engineer      = 
+| general_contractor     = 
+| main_contractors       = 
+| seating_type           = 
+| capacity               = 
+| suites                 = 
+| record_attendance      = 
+| dimensions             = 
+| field_shape            = 
+| acreage                = 
+| volume                 = 
+| tenants                = 
+| embedded               = 
+| website                = <!-- {{URL|example.com}} -->
+| publictransit          = 
+}}
