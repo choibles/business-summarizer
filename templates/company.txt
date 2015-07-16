@@ -1,1 +1,1 @@
-Test test {*name* {(formerly known as *former_name*) }is a *business_type*.  }There is a fun thing.  {It is a *type* *business_type*.}
+*name* Test{ test {*name* {(formerly known as *former_name*) {test *name*} }is a *business_type*.  }There is a fun thing.{test} } {It is a *type* *business_type*.}
