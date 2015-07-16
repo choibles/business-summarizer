@@ -1,1 +1,1 @@
-Test test \name{*name* \former_name{(formerly known as *former_name*) }is a *business_type*.  }There is a fun thing.  \type{It is a *type* *business_type*.}
+Test test {*name* {(formerly known as *former_name*) }is a *business_type*.  }There is a fun thing.  {It is a *type* *business_type*.}
