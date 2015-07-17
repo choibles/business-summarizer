@@ -1,7 +1,7 @@
 <?php
 
 	// https://en.wikipedia.org/w/api.php?action=query&titles=Duke%20Energy&prop=info|revisions&rvprop=content&format=json
-	/*
+	
 	$url = 'https://en.wikipedia.org/w/api.php?action=query&titles=Duke%20Energy&prop=info|revisions&rvprop=content&format=json';
 	
 	$ch = curl_init("");
@@ -33,6 +33,7 @@
 	
 	if (isset($infobox_matches[0])) // infobox found
 	{
+		$wikipage['type'] = $infobox_matches[1];
 		$infobox = $infobox_matches[0];
 		preg_match_all('/\|\s*([\w_]*)\s*=\s*(.*?)\n/', $infobox, $infobox_data_matches, PREG_SET_ORDER);
 		foreach ($infobox_data_matches as $infobox_field)
@@ -41,18 +42,8 @@
 			$wikipage['properties'][$infobox_field[1]] = $altered_value;
 		}
 	}
-	//print_r($page);
-	//echo "\n\n------\n\n";
-	print_r($wikipage);*/
 
-	$company = array(
-		'name' => 'Dan\'s Microwaves',
-		'former_name' => 'Mitch Mics',
-		'business_type' => 'company',
-		'type' => 'private'
-	);
-
-	$template_filepath = 'templates/'.$company['business_type'].'.txt';
+	$template_filepath = 'templates/'.$wikipage['type'].'.txt';
 	if (!file_exists($template_filepath))
 	{
 		// exit and error out
@@ -60,7 +51,7 @@
 	}
 	$template = file_get_contents($template_filepath);
 
-	echo evaluate_template($template, $company);
+	echo evaluate_template($template, $wikipage['properties']);
 
 	function evaluate_template($template, $parameters)
 	{
